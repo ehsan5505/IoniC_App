@@ -1,8 +1,40 @@
-[
-    ifr:{
-        name:   Ehsan,
-        division:   Daily,
-        kpi:    109,
-        about:  There is always something that build up your thrust and make yourself a best in expedation
-    }
-]
+{
+    "ifr": [
+        {
+            "name" : "Ehsan Rafeeque",
+            "designation" : "AWDFE",
+            "division" : "Daily",
+            "kpi": 109,
+            "about": "There is always something that everyone miss in his life"
+        },
+        {
+            "name" : "Mohsin Khan",
+            "designation" : "AWDFE",
+            "division" : "Daily",
+            "kpi": 120,
+            "about": "Great Republic person from asia pacific"
+        },
+        {
+            "name" : "Malik Khan",
+            "designation" : "AWDFE",
+            "division" : "Daily",
+            "kpi": 113,
+            "about": "Malik from the coast west of africa, discover fundamental of radioactive"
+        },
+        {
+            "name" : "Usama Ahmed",
+            "designation" : "AWDFE",
+            "division" : "Daily",
+            "kpi": 103,
+            "about": "Great Comic Person with thousands of reading and watching session of novel"
+        },
+        {
+            "name" : "Taha Sajjad",
+            "designation" : "AWDFE",
+            "division" : "Daily",
+            "kpi": 100,
+            "about": "Aggressive and passionate about his own life."
+        }
+        
+        ]
+}

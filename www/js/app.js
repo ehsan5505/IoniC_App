@@ -15,5 +15,18 @@ angular.module('starter', ['ionic'])
     if(window.StatusBar) {
       StatusBar.styleDefault();
     }
-  });
+  })
 })
+.controller('ListController',['$scope','$http',controlFunctionality]);
+
+function controlFunctionality($scope,$http){
+  $scope.status = "start your national anthem";
+  $http.get('data/socio.json')
+    .success(function(data) {
+      $scope.status = data.ifr;
+    })
+    .error(function(data, status) {
+      console.error('System error', status, data);
+    })
+    
+}
