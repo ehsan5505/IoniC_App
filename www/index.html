@@ -21,47 +21,7 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
-
-    <ion-pane>
-      <ion-header-bar class="bar-stable bar-dark">
-        <button class="button button-clear icon ion-navicon button-left button-calm"></button>
-        <h1 class="title" style="color:aqua">ESI App Developers</h1>
-        <button class="button icon button-clear ion-gear-a button-calm"></button>
-        
-      </ion-header-bar>
-      
-      
-      <!--now for search navigation-->
-      
-      <ion-content ng-controller="ListController">
-          <!--Search Bar START-->
-          <div class="list inset">
-          <div class="item item-dark item-input-inset">
-            <label class="item-input-wrapper">
-              <i class="icon ion-search"></i>
-              <input type="text" ng-model="query" placeholder="Want to search ... ">
-            </label>
-            <button class="button button-small button-dark">
-              Search
-            </button>
-          </div>
-        </div>
-        <!--Search Bar END-->
-        <em>Status : {{status.name}}</em>
-        <!-- here comes the content but first design the privileges -->
-        <ion-list class="card" >
-          <ion-item class="item-thumbnail-left" ng-repeat="item in status | filter: query | orderBy:'-kpi'" >
-              <img src="http://placehold.it/100x100" alt="{{item.name}}" >
-              <h2>{{item.name}}</h2>
-              <h3>{{item.designation}}</h3>
-              <h3>{{item.division}}</h3>
-              <h5>{{item.kpi}}</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quidem, voluptas vitae debitis consectetur totam error impedit. Numquam, reprehenderit, sequi, nobis tempora cupiditate sint molestias voluptate earum suscipit veritatis iure.</p>
-          </ion-item>
-        </ion-list>
-        
-      </ion-content>
-    </ion-pane>
+  <body ng-app="starter" ng-controller="ListController">
+   <ion-nav-view></ion-nav-view>
   </body>
 </html>
