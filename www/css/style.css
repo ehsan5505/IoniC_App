@@ -1,5 +1,34 @@
 /* Empty. Add your own CSS if you like */
-
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .pad-bot{
     padding-bottom:30px;
+}
+
+.home{
+    
+}
+.home { 
+  background: url('../img/wall.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  image-resolution:'500x300';
+}
+
+.home h1{
+    font-family: 'Poiret One', cursive;
+    margin:0 auto;
+    text-align:center;
+    padding-top:25%;
+}
+
+.home img{
+    padding:5% 0;
+    /*margin:0px auto;*/
+    display:block;
+    margin:0px auto;
+    vertical-align:center;
+    alignment-adjust:center;
+    /*width:100%;*/
 }
