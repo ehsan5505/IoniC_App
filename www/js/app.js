@@ -24,6 +24,10 @@ angular.module('starter', ['ionic'])
     url: '/person',
     templateUrl:'template/person.html'
     })
+    .state('test',{
+      url:'/test',
+      templateUrl:'template/test.html'
+    })
   
     // .state('tabs',{
     //   url:'/tab',

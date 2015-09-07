@@ -1,0 +1,27 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable bar-dark">
+    <button class="button button-clear icon ion-navicon button-left button-calm"></button>
+    <h1 class="title" style="color:aqua">ESI App Developers</h1>
+    <button class="button icon button-clear ion-gear-a button-calm"></button>
+  </ion-header-bar>
+  <!--now for search navigation-->
+      
+  <ion-content ng-controller="ListController">
+    <!--Search Bar START-->
+    <!--Search Bar END-->
+    <em>Status : {{status.name}}</em>
+    <!-- here comes the content but first design the privileges -->
+    <div class="padding">
+        <h1>Hi!</h1>
+        <p>There is something that we want to share with the world and almost all of them is like them....<em>I say almost <b>not All!!!</b></em></p>
+    </div>
+    
+    
+        
+  </ion-content>
+  <ion-tabs class="tabs-background-dark tabs-color-calm tabs-icon-top" >
+      <ion-tab title="Home" badge="5" badge-style="badge-assertive" icon="ion-home" href="/home"></ion-tab>
+      <ion-tab title="Person" icon="ion-person" href="/person"></ion-tab>
+      <ion-tab title="MISC" icon="ion-nuclear"></ion-tab>
+    </ion-tabs>
+</ion-pane>

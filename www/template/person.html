@@ -20,6 +20,7 @@
     <!--Search Bar END-->
     <em>Status : {{status.name}}</em>
     <!-- here comes the content but first design the privileges -->
+    <div class="pad-bot">
       <ion-list class="card" >
           <ion-item class="item-thumbnail-left" ng-repeat="item in status | filter: query | orderBy:'-kpi' as result track by $index" >
               <img src="http://placehold.it/100x100" alt="{{item.name}}" >
@@ -30,12 +31,13 @@
               <p>{{item.about}}</p>
           </ion-item>
       </ion-list>
+    </div>
     
-    <ion-tabs class="tabs-background-dark tabs-color-calm tabs-icon-top" >
-      <ion-tab title="Home" icon="ion-home"></ion-tab>
-      <ion-tab title="Person" icon="ion-person"></ion-tab>
-      <ion-tab title="MISC" icon="ion-nuclear"></ion-tab>
-    </ion-tabs>
         
   </ion-content>
+  <ion-tabs class="tabs-background-dark tabs-color-calm tabs-icon-top" >
+      <ion-tab title="Home" icon="ion-home" href="/test"></ion-tab>
+      <ion-tab title="Person" icon="ion-person" href="/person"></ion-tab>
+      <ion-tab title="MISC" icon="ion-nuclear"></ion-tab>
+    </ion-tabs>
 </ion-pane>
