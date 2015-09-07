@@ -21,7 +21,7 @@
     <em>Status : {{status.name}}</em>
     <!-- here comes the content but first design the privileges -->
       <ion-list class="card" >
-          <ion-item class="item-thumbnail-left" ng-repeat="item in status | filter: query | orderBy:'-kpi'" >
+          <ion-item class="item-thumbnail-left" ng-repeat="item in status | filter: query | orderBy:'-kpi' as result track by $index" >
               <img src="http://placehold.it/100x100" alt="{{item.name}}" >
               <h2>{{item.name}}</h2>
               <h3>{{item.designation}}</h3>
