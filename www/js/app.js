@@ -20,21 +20,26 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider,$urlRouterProvider){
   $stateProvider
-    .state('tabs',{
-      url:'/tab',
-      abstract: true,
-      templateUrl:'template/tabs.html',
+    .state('person',{
+    url: '/person',
+    templateUrl:'template/person.html'
     })
-    .state('tabs.persons',{
-      url:'/person',
-      views: {
-        'list-person': {
-          templateUrl: 'template/student.html',
-          controller: 'ListController'
-        }
-      }
-    })
-  $urlRouterProvider.otherwise('/tab/person');
+  
+    // .state('tabs',{
+    //   url:'/tab',
+    //   abstract: true,
+    //   templateUrl:'template/tabs.html',
+    // })
+    // .state('tabs.persons',{
+    //   url:'/person',
+    //   views: {
+    //     'list-person': {
+    //       templateUrl: 'template/student.html',
+    //       controller: 'ListController'
+    //     }
+    //   }
+    // })
+  $urlRouterProvider.otherwise('/person');
 })
 
 .controller('ListController',['$scope','$http',controlFunctionality]);

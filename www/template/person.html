@@ -8,15 +8,15 @@
       
   <ion-content ng-controller="ListController">
     <!--Search Bar START-->
-    <ion-list class="list inset">
-      <ion-item class="item  item-input-inset">
+    <div class="list inset">
+      <div class="item  item-input-inset">
         <label class="item-input-wrapper">
         <i class="icon ion-search"></i>
         <input type="text" ng-model="query" placeholder="Want to search ... ">
         </label>
         <button class="button button-small button-dark">Search</button>
-      </ion-item>
-    </ion-list>
+      </div>
+    </div>
     <!--Search Bar END-->
     <em>Status : {{status.name}}</em>
     <!-- here comes the content but first design the privileges -->
