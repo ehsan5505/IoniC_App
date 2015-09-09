@@ -32,3 +32,7 @@
     alignment-adjust:center;
     /*width:100%;*/
 }
+
+.image-bg{
+    background:white;
+}
