@@ -24,6 +24,11 @@ angular.module('starter', ['ionic'])
     url: '/person',
     templateUrl:'template/person.html'
     })
+    .state('detail', {
+      url: '/person/:aId',
+      templateUrl: 'template/person.html',
+      controller: 'ListController'
+    })
     .state('test',{
       url:'/test',
       templateUrl:'template/test.html'
@@ -32,7 +37,7 @@ angular.module('starter', ['ionic'])
       url:'/home',
       templateUrl:'template/home.html'
     })
-  
+    
     // .state('tabs',{
     //   url:'/tab',
     //   abstract: true,
