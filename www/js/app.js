@@ -24,9 +24,9 @@ angular.module('starter', ['ionic'])
     url: '/person',
     templateUrl:'template/person.html'
     })
-    .state('detail', {
-      url: '/person/:aId',
-      templateUrl: 'template/person.html',
+    .state('person.detail', {
+      url: 'person/:param',
+      template:  '<strong>Found Error</strong>',
       controller: 'ListController'
     })
     .state('test',{
@@ -52,7 +52,8 @@ angular.module('starter', ['ionic'])
     //     }
     //   }
     // })
-  $urlRouterProvider.otherwise('/person');
+  $urlRouterProvider.otherwise('/person')
+  $urlRouterProvider.when('/person/:param')
 })
 
 .controller('ListController',['$scope','$http',controlFunctionality]);
